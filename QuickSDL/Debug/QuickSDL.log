@@ -1,0 +1,4 @@
+﻿  Board.cpp
+C:\Users\khamm\source\repos\snakesAndLadder\QuickSDL\Board.cpp(18,18): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\khamm\source\repos\snakesAndLadder\QuickSDL\Board.cpp(22,19): warning C4305: '=': truncation from 'double' to 'float'
+  QuickSDL.vcxproj -> C:\Users\khamm\source\repos\snakesAndLadder\Debug\SnakesAndLadder.exe
