@@ -4,7 +4,6 @@
 // Used to keep track of the time between each reset  //
 // A reset is usually called after each frame         //
 //                                                    //
-// By: Ather Omar                                     //
 //----------------------------------------------------//
 #ifndef _TIMER_H
 #define _TIMER_H

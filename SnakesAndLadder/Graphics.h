@@ -4,8 +4,7 @@
 // Handles the initialization of the graphics related SDL libraries    //
 // and their release                                                   //
 // Also handles texture and text loading                               //
-//                                                                     //
-// By: Ather Omar                                                      //
+//                                                                     // 
 //---------------------------------------------------------------------//
 #ifndef _GRAPHICS_H
 #define _GRAPHICS_H
@@ -28,11 +27,11 @@ namespace QuickSDL {
 	public:
 
 		//The Width of the game's window
-		const int SCREEN_WIDTH = 800;
+		const int SCREEN_WIDTH = 990;
 		//The Height of the game's window
-		const int SCREEN_HEIGHT = 600;
+		const int SCREEN_HEIGHT = 790;
 		//The title of the game's window
-		const char* WINDOW_TITLE = "QuickSDL";
+		const char* WINDOW_TITLE = "Snakes And Ladder";
 
 	private:
 		//Needed to make GameManager a singleton class

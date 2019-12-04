@@ -4,16 +4,15 @@
 // Used to intialize and release all other manager                     //
 // Contains the game loop as well as the Update and Render functions   //
 // Used to make sure all functions are called in the correct order     //
-//                                                                     //
-// By: Ather Omar                                                      //
+//                                                                     // 
 //---------------------------------------------------------------------//
 #ifndef _GAMEMANAGER_H
 #define _GAMEMANAGER_H
 //----------------------------------------------------------------
-#include "InputManager.h"
 #include "AudioManager.h"
 #include "Timer.h"
-#include "Texture.h"
+#include "ScreenManager.h"
+
 //----------------------------------------------------------------
 // QuickSDL
 //----------------------------------------------------------------
@@ -33,7 +32,7 @@ namespace QuickSDL {
 		//Used to exit the game loop
 		bool mQuit;
 
-		//List of Managers to be initialized and released
+		//List of Managers to be initialized and released 
 		Graphics* mGraphics;
 		AssetManager* mAssetMgr;
 		InputManager* mInputMgr;
@@ -44,6 +43,10 @@ namespace QuickSDL {
 
 		// Used to catch the event when the user exits the game
 		SDL_Event mEvents;
+
+          ScreenManager* mScreenMgr;
+     
+
 
 	public:
 		//-----------------------------------------

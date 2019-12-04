@@ -3,7 +3,6 @@
 // Extends the Texture class' functionality to handle animations   //
 // Uses the Texture class' spritesheet constructor                 //
 //                                                                 //
-// By: Ather Omar                                                  //
 //-----------------------------------------------------------------//
 #include "AnimatedTexture.h"
 //---------------------------------------------------------------

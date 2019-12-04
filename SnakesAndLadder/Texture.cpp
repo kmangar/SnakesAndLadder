@@ -5,7 +5,6 @@
 // Can load full textures, or clipped textures from a spritesheet  //
 // or convert a string into a texture to be rendered               //
 //                                                                 //
-// By: Ather Omar                                                  //
 //-----------------------------------------------------------------//
 #include "Texture.h"
 //--------------------------------------------------------------

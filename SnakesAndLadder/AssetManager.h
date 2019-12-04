@@ -3,8 +3,7 @@
 // Singleton                                                           //
 // Used to load all assets used in the game,                           //
 // Caches all loaded assets so that nothing is loaded more than once   //
-//                                                                     //
-// By: Ather Omar                                                      //
+//                                                                     // 
 //---------------------------------------------------------------------//
 #ifndef _ASSETMANAGER_H
 #define _ASSETMANAGER_H

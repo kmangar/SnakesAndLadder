@@ -5,7 +5,6 @@
 // Sets up a system to parent GameEntity objects to one another                                                      //
 // making the child's position, rotation, and scale relative to the parent's instead of the world origin             //
 //                                                                                                                   //
-// By: Ather Omar                                                                                                    //
 //-------------------------------------------------------------------------------------------------------------------//
 #include "GameEntity.h"
 //-------------------------------------------------------------
@@ -31,6 +30,7 @@ namespace QuickSDL {
 
 		mPos = pos;
 	}
+    
 
 	Vector2 GameEntity::Pos(SPACE space) {
 
@@ -117,7 +117,8 @@ namespace QuickSDL {
 
 			//Setting the local position to be relative to the new parent (while maintaining the same world position as before)
                Vector2 normalBack(Pos(world) - parent->Pos(world));
-               mPos = RotateVector(normalBack, -parent->Rotation(world));			mPos.x /= parentScale.x;
+               mPos = RotateVector(normalBack, -parent->Rotation(world));	
+               mPos.x /= parentScale.x;
 			mPos.y /= parentScale.y;
 
 			//Setting the local rotation to be relative to the new parent (while maintaining the same world rotation as before)

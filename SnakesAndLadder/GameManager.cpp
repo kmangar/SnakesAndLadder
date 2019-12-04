@@ -4,7 +4,6 @@
 // Contains the game loop as well as the Update and Render functions   //
 // Used to make sure all functions are called in the correct order     //
 //                                                                     //
-// By: Ather Omar                                                      //
 //---------------------------------------------------------------------//
 #include "GameManager.h"
 //-----------------------------------------------------------
@@ -52,10 +51,13 @@ namespace QuickSDL {
 		//Initialize Timer
 		mTimer = Timer::Instance();
 
-	
+          mScreenMgr = ScreenManager::Instance();
      }
      
 	GameManager::~GameManager() {
+
+          ScreenManager::Release();
+          mScreenMgr = NULL;
 
 		AudioManager::Release();
 		mAudioMgr = NULL;
@@ -71,17 +73,21 @@ namespace QuickSDL {
 
 		Timer::Release();
 		mTimer = NULL;
+
 	}
 
 	void GameManager::EarlyUpdate() {
 
 		//Updating the input state before any other updates are run to make sure the Input check is accurate
 		mInputMgr->Update();
+
 	}
 
 	void GameManager::Update() {
 
 		//GameEntity Updates should happen here
+          mScreenMgr->Update();
+
 	}
 
 	void GameManager::LateUpdate() {
@@ -98,7 +104,7 @@ namespace QuickSDL {
 		mGraphics->ClearBackBuffer();
 
 		//All other rendering is to happen here
-
+          mScreenMgr->Render();
 		//Renders the current frame
 		mGraphics->Render();
 	}

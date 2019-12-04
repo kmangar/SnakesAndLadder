@@ -3,8 +3,7 @@
 // Singleton                                                    //
 // Plays WAV files                                              //
 // Can play one BGM at a time, and many sound effects at once   //
-//                                                              //
-// By: Ather Omar                                               //
+//                                                              // 
 //--------------------------------------------------------------//
 #ifndef _AUDIOMANAGER_H
 #define _AUDIOMANAGER_H

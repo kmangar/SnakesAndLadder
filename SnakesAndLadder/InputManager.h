@@ -4,7 +4,6 @@
 // Handles all Input related functionality for keyboard and mouse.     //
 //(To be expanded later to handle touch and contoller input)           //
 //                                                                     //
-// By: Ather Omar                                                      //
 //---------------------------------------------------------------------//
 #ifndef _INPUTMANAGER_H
 #define _INPUTMANAGER_H

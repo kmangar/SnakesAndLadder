@@ -3,8 +3,7 @@
 // The base class for all textures to be rendered on screen        //
 // Can load full textures, or clipped textures from a spritesheet  //
 // or convert a string into a texture to be rendered               //
-//                                                                 //
-// By: Ather Omar                                                  //
+//                                                                 // 
 //-----------------------------------------------------------------//
 #ifndef _TEXTURE_H
 #define _TEXTURE_H
@@ -40,6 +39,8 @@ namespace QuickSDL {
 		SDL_Rect mRenderRect;
 		//Is used to clip the texture from a spritesheet
 		SDL_Rect mClipRect;
+          int id;
+
 
 	public:
 		//--------------------------------------------------------------
@@ -47,6 +48,7 @@ namespace QuickSDL {
 		//Note: For spritesheets use the other contructor
 		//--------------------------------------------------------------
 		Texture(std::string filename);
+		Texture(std::int32_t num);
 		//-------------------------------------------------------------
 		//Loads a texture from from file (relative to the exe path)
 		//Supports spritesheets
@@ -64,6 +66,14 @@ namespace QuickSDL {
 		//------------------------------------------------------------
 		Texture(std::string text, std::string fontpath, int size, SDL_Color color);
 		~Texture();
+
+          void setter(int num) {
+               id = num;
+          }
+
+          int getter() {
+               return id;
+          }
 
 		//----------------------------------------------
 		//Called to render the texture to the screen
